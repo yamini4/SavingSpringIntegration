@@ -1,0 +1,3 @@
+INPUT_DIR: "src/main/resources/input"
+OUTPUT_DIR: "src/main/resources/output"
+FILE_PATTERN: "*.txt"
