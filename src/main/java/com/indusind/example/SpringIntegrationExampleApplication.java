@@ -6,18 +6,15 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.annotation.Bean;
 
+import com.indusind.example.service.StringRotateTest;
+
 @SpringBootApplication(scanBasePackages = "com.indusind.example")
 public class SpringIntegrationExampleApplication {
 
 	public static void main(String[] args) {
+		StringRotateTest.stringRotateTest("miniya", "yamini");
 		SpringApplication.run(SpringIntegrationExampleApplication.class, args);
 
-	}
-
-	// 2 main methods means, it won't through error. It wont execute also...String[]
-	// args one only will execute here.
-	public static void main(Character[] args) {
-		System.out.println("character=======================================");
 	}
 
 	// It will print what all are beans got loaded in this application
