@@ -4,8 +4,8 @@ import org.springframework.integration.annotation.Gateway;
 import org.springframework.integration.annotation.MessagingGateway;
 
 @MessagingGateway
-public interface ProcessGateway {
+public interface FileGateway {
 
-	@Gateway(requestChannel = "inputChannel")
-	String processName(String message);
+	@Gateway(requestChannel = "fileChannel")
+	void triggerFileProcess();
 }
